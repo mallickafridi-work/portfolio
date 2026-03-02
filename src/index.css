@@ -1,3 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .nav-item {
+        display: flex;
+        width: 100px;
+        height: 50px;
+    }
+}
+
 body {
     background-color: grey;
 }
@@ -12,23 +22,16 @@ div.main {
     grid-area: 1 / 1 / 2 / 2;
     display: grid;
     grid-template-columns: 100px auto 100px;
+    border: 1px dashed white;
 
     .navbar {
         grid-area: 1/ 2 / 2 / 3;
         display: flex;
         flex-direction: row-reverse;
 
-        .item {
-            background-color: red;
-            border: 1px solid red;
-            width: 100px;
-            height: 50px;
-
-            a {
-                background-color: papayawhip;
-                width: fit-content;
-                margin: auto;
-            }
+        a {
+            width: fit-content;
+            margin: auto;
         }
     }
 }

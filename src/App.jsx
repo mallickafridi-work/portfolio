@@ -7,9 +7,9 @@ function App() {
       <div className='main'>
         <header className='header'>
           <nav className='navbar'>
-            <div className="item"><a href="/" className="about"> About </a></div>
-            <div className="item"><a href="/" className="contact"> Contact </a></div>
-            <div className="item"><a href="/" className="projects"> Projects </a></div>
+            <div className="nav-item"><a href="/" className="about"> About </a></div>
+            <div className="nav-item"><a href="/" className="contact"> Contact </a></div>
+            <div className="nav-item"><a href="/" className="projects"> Projects </a></div>
           </nav>
         </header>
         <div className="navbar"></div>
