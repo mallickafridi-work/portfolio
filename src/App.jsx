@@ -1,15 +1,17 @@
 import { useState } from 'react'
+import backVideo from './assets/video/space.mp4'
 
 function App() {
 
   return (
     <>
+      <video autoPlay loop muted playsInline className="back-video" src={backVideo} />
       <div className='main'>
         <header className='header'>
           <nav className='navbar'>
-            <div className="nav-item"><a href="/" className="about"> About </a></div>
-            <div className="nav-item"><a href="/" className="contact"> Contact </a></div>
-            <div className="nav-item"><a href="/" className="projects"> Projects </a></div>
+            <a className='item px-6 text-white text-2xl' href="/">About</a>
+            <a className='item px-6 text-white text-2xl' href="/">Contact</a>
+            <a className='item px-6 text-white text-2xl' href="/">Projects</a>
           </nav>
         </header>
         <div className="navbar"></div>

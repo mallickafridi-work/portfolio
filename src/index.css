@@ -1,21 +1,25 @@
 @import "tailwindcss";
 
-@layer utilities {
-    .nav-item {
-        display: flex;
-        width: 100px;
-        height: 50px;
-    }
+body {
+    background-color: black
 }
 
-body {
-    background-color: grey;
+video.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
 div.main {
+    position: relative;
+    z-index: 1;
     text-align: center;
     display: grid;
-    grid-template-rows: 50px auto 100px
+    grid-template-rows: 64px auto 100px
 }
 
 .header {
@@ -28,12 +32,20 @@ div.main {
         grid-area: 1/ 2 / 2 / 3;
         display: flex;
         flex-direction: row-reverse;
-
-        a {
-            width: fit-content;
-            margin: auto;
-        }
     }
+
+    a.item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    a.item:hover {
+        background-color: white;
+        color: black;
+    }
+
 }
 
 .content-area {
