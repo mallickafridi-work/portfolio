@@ -5,13 +5,32 @@ body {
 div.main {
     text-align: center;
     display: grid;
-    grid-template-rows: 100px auto 100px
+    grid-template-rows: 50px auto 100px
 }
 
 .header {
     grid-area: 1 / 1 / 2 / 2;
-    width: fit-content;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+
+    .navbar {
+        grid-area: 1/ 2 / 2 / 3;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .item {
+            background-color: red;
+            border: 1px solid red;
+            width: 100px;
+            height: 50px;
+
+            a {
+                background-color: papayawhip;
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
 }
 
 .content-area {
