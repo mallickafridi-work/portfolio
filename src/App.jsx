@@ -5,14 +5,14 @@ function App() {
 
   return (
     <>
-      <video autoPlay loop muted playsInline className="back-video" src={backVideo} />
       <div className='main'>
         <header className='header'>
           <nav className='navbar'>
-            <a className='item px-6 text-white text-2xl' href="/">About</a>
-            <a className='item px-6 text-white text-2xl' href="/">Contact</a>
-            <a className='item px-6 text-white text-2xl' href="/">Projects</a>
+            <a className='item px-6 text-white hidden ' href="/">About</a>
+            <a className='item px-6 text-white ' href="/">Contact</a>
+            <a className='item px-6 text-white ' href="/">Projects</a>
           </nav>
+          <i class="fa-solid fa-bars"></i>
         </header>
         <div className="navbar"></div>
         <div className="content-area">
