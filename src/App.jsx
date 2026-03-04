@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <video autoPlay loop muted playsInline className="back-video" src={backVideo}></video>
-      <div className='main'>
+      <div className='main comic-relief-regular'>
         <header className='header'>
 
           <nav className={`nav-item navbar ${clicked ? 'active' : ''}`}>
